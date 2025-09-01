@@ -7,14 +7,15 @@ public class While2 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite um numero");
+        int soma = 0;
         int num = sc.nextInt();
-        int mais = 0;
+
 
         while (num != 0) {
-            int num2 = sc.nextInt();
-            int soma = num + num2;
+            soma += num;
+            num = sc.nextInt();
         }
-        System.out.print("RESULTADO: " + );
+        System.out.print("RESULTADO: " + soma );
 
         sc.close();
     }
