@@ -8,7 +8,7 @@ public class calculadora {
 
         System.out.printf("1 PARA SOMA %n2 PARA SUBTRAIR %n3 PARA MULTIPLICAR %n4 PARA DIVIDIR %n ");
         int opcao_User = sc.nextInt();
-        int resultado = 0;
+        double resultado = 0;
 
         if (opcao_User == 1) {
             System.out.print("DIGITE UM NUMERO: ");
