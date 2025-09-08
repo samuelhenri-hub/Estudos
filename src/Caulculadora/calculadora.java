@@ -51,8 +51,12 @@ public class calculadora {
                 System.out.print("ERRO!! NÃO É DIVISIVEL POR 0");
             }
 
-            resultado = num1 * num2;
+            resultado = num1 / num2;
             System.out.print(resultado);
+        }
+        else {
+            System.out.print("DIGITE UMA OPÇÃO VALIDA");
+        }
 
         sc.close();
     }
