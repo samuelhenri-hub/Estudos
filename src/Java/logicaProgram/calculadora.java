@@ -49,10 +49,19 @@ public class calculadora {
             }
         }
         else if (opcaoUSer == 2) {
+
             System.out.println(" Escolha uma opção: ");
             System.out.printf(" 1 - Adição%n 2 - Subtração%n 3 - Multiplicação%n 4 - Divisão%n ");
             int opcaoFuncional = sc.nextInt();
 
+            if (opcaoFuncional == 1) {
+
+                System.out.println("Digite um numero(para de somar quando 0 é digitado)");
+                double num = sc.nextInt();
+                while (num != 0) {
+
+                }
+            }
         }
         sc.close();
     }
