@@ -13,6 +13,24 @@ public class calculadora {
         System.out.println("1 - Calculadora simples 2 - Calculadora funcional");
         int opcaoUSer = sc.nextInt();
 
+        if (opcaoUSer == 1) {
+            System.out.println("Calculadora simples, selecione a opção: ");
+            System.out.printf(" 1 - Par ou impar%n 2 - Positivo ou negativo%n");
+            int opcaoSimples = sc.nextInt();
+
+            if (opcaoSimples == 1) {
+                System.out.println(" Digite um numero inteiro: ");
+                int parImpar = sc.nextInt();
+
+                if (parImpar % 2 == 0) {
+                    System.out.printf(" O numero %d é par", parImpar);
+                }
+                else {
+                    System.out.printf(" O numero %d é impar", parImpar);
+                }
+            }
+        }
+
         sc.close();
     }
 }
