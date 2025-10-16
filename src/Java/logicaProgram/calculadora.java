@@ -43,6 +43,16 @@ public class calculadora {
                     System.out.printf(" O numero %f é negativo", positiveNegative);
                 }
             }
+
+            else {
+                System.out.println("Escolha uma opção valida");
+            }
+        }
+        else if (opcaoUSer == 2) {
+            System.out.println(" Escolha uma opção: ");
+            System.out.printf(" 1 - Adição%n 2 - Subtração%n 3 - Multiplicação%n 4 - Divisão%n ");
+            int opcaoFuncional = sc.nextInt();
+
         }
         sc.close();
     }
