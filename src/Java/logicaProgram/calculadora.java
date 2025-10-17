@@ -101,6 +101,10 @@ public class calculadora {
                 System.out.println("Digite outro numero: ");
                 double num1 = sc.nextDouble();
 
+                if (num < num1) {
+                    System.out.println("ERRO");
+                }
+
                 double divisao = num / num1;
             }
         }
