@@ -92,6 +92,17 @@ public class calculadora {
 
                 double vezes = num * num1;
             }
+
+            else if (opcaoFuncional == 4) {
+
+                System.out.println("Digite um numero: ");
+                double num = sc.nextDouble();
+
+                System.out.println("Digite outro numero: ");
+                double num1 = sc.nextDouble();
+
+                double divisao = num / num1;
+            }
         }
         sc.close();
     }
