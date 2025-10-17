@@ -58,9 +58,14 @@ public class calculadora {
 
                 System.out.println("Digite um numero(para de somar quando 0 é digitado)");
                 double num = sc.nextInt();
-                while (num != 0) {
+                double soma = 0;
 
+                while (num != 0) {
+                    soma = soma + num;
+                    num = sc.nextInt();
                 }
+
+                System.out.printf("Resultado: %f", soma);
             }
         }
         sc.close();
