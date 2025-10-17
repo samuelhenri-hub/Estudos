@@ -69,6 +69,7 @@ public class calculadora {
             }
 
             else if (opcaoFuncional == 2) {
+
                 System.out.println("Digite um numero: ");
                 double num = sc.nextDouble();
 
@@ -79,6 +80,17 @@ public class calculadora {
                     System.out.println("ERRO");
                 }
                 double menos = num - num1;
+            }
+
+            else if (opcaoFuncional == 3) {
+
+                System.out.println("Digite um numero: ");
+                double num = sc.nextDouble();
+
+                System.out.println("Digite outro numero: ");
+                double num1 = sc.nextDouble();
+
+                double vezes = num * num1;
             }
         }
         sc.close();
