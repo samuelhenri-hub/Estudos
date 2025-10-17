@@ -67,6 +67,19 @@ public class calculadora {
 
                 System.out.printf("Resultado: %f", soma);
             }
+
+            else if (opcaoFuncional == 2) {
+                System.out.println("Digite um numero: ");
+                double num = sc.nextDouble();
+
+                System.out.println("Digite outro numero: ");
+                double num1 = sc.nextDouble();
+
+                if (num < num1) {
+                    System.out.println("ERRO");
+                }
+                double menos = num - num1;
+            }
         }
         sc.close();
     }
