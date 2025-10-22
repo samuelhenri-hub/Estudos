@@ -79,6 +79,7 @@ public class RPG {
                 }
             }
             System.out.printf("O lobo morreu, sua vida é %d", vida);
+
         }
 
         sc.close();
