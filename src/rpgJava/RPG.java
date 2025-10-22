@@ -1,5 +1,6 @@
 package rpgJava;
 
+import java.util.Optional;
 import java.util.Scanner;
 
 public class RPG {
@@ -56,6 +57,29 @@ public class RPG {
         }
 
         System.out.printf("Seus Atributos: %n VIDA: %d%n ESCUDO: %d%n ATAQUE: %d%n", vida, escudo, ataque);
+
+        System.out.printf("%n Voce encontrou um lobo a frente, oque vai fazer?");
+        System.out.printf("%n 1 - ATACAR %n 2 - DEFENDER %n 3 - FUGIR %n");
+        int opcaoAtaqueLobo = sc.nextInt();
+
+        int vidaLobo = 50;
+        int ataqueLobo = 10;
+
+        if (opcaoAtaqueLobo == 1) {
+
+            while (vidaLobo != 0) {
+                System.out.print("VOCE ATACOU");
+                vidaLobo -= ataque;
+
+                System.out.print("LOBO ATACOU");
+                vida -= ataqueLobo;
+
+                if (vida == 0) {
+                    System.out.print("GAME OVER");
+                }
+            }
+            System.out.printf("O lobo morreu, sua vida é %d", vida);
+        }
 
         sc.close();
     }
